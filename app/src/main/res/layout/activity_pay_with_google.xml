@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Dashborad.Buyer.HomeContant.PaymentMethod.PayWithGoogle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+
+        <!--
+            TODO Check out Google Pay's brand guidelines to discover all button types and styles:
+            https://developers.google.com/pay/api/android/guides/brand-guidelines#assets
+        -->
+
+        <include
+            android:id="@+id/googlePayButton"
+            layout="@layout/buy_with_googlepay_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</ScrollView>

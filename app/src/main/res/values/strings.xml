@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Home Restaurant</string>
+    <string name="YOUR_API_KEY" translatable="false">AIzaSyD9jn0PXPoLjIn1B_wc0ASPXWxg5aYb-so</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Seller</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_verify_your_current_address">VerifyYourCurrentAddress</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Checkout activity -->
+    <string name="title_activity_pay_with_google">PayWithGoogle</string>
+    <string name="checkout_item_description">Description</string>
+    <string name="googlepay_status_unavailable" translatable="false">Unfortunately, Google Pay is
+        not available on this phone.
+    </string>
+    <string name="payments_show_name" translatable="false">Successfully received payment data for
+        %s!
+    </string>
+</resources>

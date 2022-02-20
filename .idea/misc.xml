@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Home_Restaurant/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1015" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/drawable-v24/phone_number_ui.xml" value="0.1015" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/drawable-v24/to_remove_edit5text_underline.xml" value="0.1015" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/drawable/bottomsheetstyle.xml" value="0.1175" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/drawable/buy_with_googlepay_button_content.xml" value="0.1145" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/drawable/googlepay_button_overlay.xml" value="0.1145" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/drawable/googlepaylayout.xml" value="0.1145" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/drawable/ic_baseline_access_time_filled_24.xml" value="0.128" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.128" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/drawable/ic_baseline_arrow_back_ios_24.xml" value="0.128" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/drawable/ic_baseline_business_24.xml" value="0.187" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/drawable/ic_baseline_star_rate_24.xml" value="0.128" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1015" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/drawable/ic_menu_camera.xml" value="0.1705" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.128" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.128" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/drawable/round_btn_style.xml" value="0.1705" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/drawable/round_rating.xml" value="0.128" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/drawable/round_rating_with_color.xml" value="0.128" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/drawable/roundbtn.xml" value="0.128" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/drawable/side_nav_bar.xml" value="0.1915" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/drawable/textbtn.xml" value="0.128" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/activity_choose_your_location.xml" value="0.15726495726495726" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/activity_home.xml" value="0.14" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/activity_home_page.xml" value="0.15726495726495726" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/activity_pay_with_google.xml" value="0.25" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/activity_seller.xml" value="0.15726495726495726" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/activity_set_hotel_products_in_separate.xml" value="0.25" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/activity_simplayout.xml" value="0.15726495726495726" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/activity_user_varification.xml" value="0.22" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/activity_verify_your_current_address.xml" value="0.15726495726495726" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/app_bar_home.xml" value="0.33" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/buy_products.xml" value="0.25" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/buy_with_googlepay_button.xml" value="0.5" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/content_home.xml" value="0.2" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_add_your_product.xml" value="0.2" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_buy_contant.xml" value="0.13994565217391305" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_choose_youe_location.xml" value="0.15726495726495726" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_choose_your_location.xml" value="0.33" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_do_googl_epay.xml" value="0.33" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_gallery.xml" value="0.15726495726495726" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_home.xml" value="0.15726495726495726" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_home_page.xml" value="0.25" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_hotel_products.xml" value="0.3205574912891986" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_mobile_number_verification.xml" value="0.2" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_order.xml" value="0.15726495726495726" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_order_cart.xml" value="0.15726495726495726" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_order_products.xml" value="0.13994565217391305" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_sell.xml" value="0.15726495726495726" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_seller_registration.xml" value="0.22" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_separate_hotel_products.xml" value="0.25" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_slideshow.xml" value="0.15726495726495726" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_take_username.xml" value="0.2" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_user_to_hotel_map.xml" value="0.15726495726495726" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_verify_your_current_address.xml" value="0.15726495726495726" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/nav_header_home.xml" value="0.33" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/show_nearest_hotel.xml" value="0.22" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/your_product.xml" value="0.33" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/menu/activity_main_drawer.xml" value="0.67" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/menu/addcart.xml" value="0.15726495726495726" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/menu/home.xml" value="0.25" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1705" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1705" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

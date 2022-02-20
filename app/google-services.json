@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "960527149920",
+    "firebase_url": "https://home-restaurant-2bb70-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "home-restaurant-2bb70",
+    "storage_bucket": "home-restaurant-2bb70.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960527149920:android:b46181da19c2429cae8c05",
+        "android_client_info": {
+          "package_name": "com.example.home_restaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960527149920-h18jn68om7ugna81tisvl16mrh26iqqh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWMN6NJ1S3gxAfE_MI-4-4c-jwbUiYY14"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960527149920-h18jn68om7ugna81tisvl16mrh26iqqh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960527149920:android:e373c22e122e8d00ae8c05",
+        "android_client_info": {
+          "package_name": "com.example.homerestaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960527149920-h18jn68om7ugna81tisvl16mrh26iqqh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWMN6NJ1S3gxAfE_MI-4-4c-jwbUiYY14"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960527149920-h18jn68om7ugna81tisvl16mrh26iqqh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
