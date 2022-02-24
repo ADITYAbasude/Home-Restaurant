@@ -26,7 +26,7 @@
         <entry key="..\:/Home_Restaurant/app/src/main/res/drawable/side_nav_bar.xml" value="0.1915" />
         <entry key="..\:/Home_Restaurant/app/src/main/res/drawable/textbtn.xml" value="0.128" />
         <entry key="..\:/Home_Restaurant/app/src/main/res/layout/activity_choose_your_location.xml" value="0.15726495726495726" />
-        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/activity_home.xml" value="0.14" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="..\:/Home_Restaurant/app/src/main/res/layout/activity_home_page.xml" value="0.15726495726495726" />
         <entry key="..\:/Home_Restaurant/app/src/main/res/layout/activity_pay_with_google.xml" value="0.25" />
         <entry key="..\:/Home_Restaurant/app/src/main/res/layout/activity_seller.xml" value="0.15726495726495726" />
@@ -51,7 +51,7 @@
         <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_mobile_number_verification.xml" value="0.2" />
         <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_order.xml" value="0.15726495726495726" />
         <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_order_cart.xml" value="0.15726495726495726" />
-        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_order_products.xml" value="0.13994565217391305" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_order_products.xml" value="0.25" />
         <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_sell.xml" value="0.15726495726495726" />
         <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_seller_registration.xml" value="0.22" />
         <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_separate_hotel_products.xml" value="0.25" />
@@ -59,8 +59,10 @@
         <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_take_username.xml" value="0.2" />
         <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_user_to_hotel_map.xml" value="0.15726495726495726" />
         <entry key="..\:/Home_Restaurant/app/src/main/res/layout/fragment_verify_your_current_address.xml" value="0.15726495726495726" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/manage_hotel_orders.xml" value="0.33" />
         <entry key="..\:/Home_Restaurant/app/src/main/res/layout/nav_header_home.xml" value="0.33" />
         <entry key="..\:/Home_Restaurant/app/src/main/res/layout/show_nearest_hotel.xml" value="0.22" />
+        <entry key="..\:/Home_Restaurant/app/src/main/res/layout/user_order.xml" value="0.33" />
         <entry key="..\:/Home_Restaurant/app/src/main/res/layout/your_product.xml" value="0.33" />
         <entry key="..\:/Home_Restaurant/app/src/main/res/menu/activity_main_drawer.xml" value="0.67" />
         <entry key="..\:/Home_Restaurant/app/src/main/res/menu/addcart.xml" value="0.15726495726495726" />

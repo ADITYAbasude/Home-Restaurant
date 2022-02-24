@@ -10,6 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -64,6 +66,7 @@ public class hotelProducts extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Your Product");
+        ((AppCompatActivity) getActivity()).getSupportActionBar().show();
 
         AddYourProduct = view.findViewById(R.id.AddYourProduct);
         ShowProducts = view.findViewById(R.id.ShowProducts);
@@ -100,7 +103,11 @@ public class hotelProducts extends Fragment {
 
         hotelOrderBtn.setOnClickListener(v -> {
             OrderProducts orderProducts = new OrderProducts();
-            orderProducts.show(getActivity().getSupportFragmentManager() , orderProducts.getTag());
+            FragmentManager manager = getActivity().getSupportFragmentManager();
+            FragmentTransaction transaction = manager.beginTransaction();
+            transaction.addToBackStack(null);
+            transaction.replace(R.id.fragmentContainerView2 , orderProducts).commit();
+
         });
 
     }

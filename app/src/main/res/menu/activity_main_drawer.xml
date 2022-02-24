@@ -17,10 +17,6 @@
             android:icon="@drawable/ic_baseline_shopping_cart_24"
             android:title="Orders" />
         <item
-            android:id="@+id/LogOut"
-            android:icon="@drawable/ic_baseline_login_24"
-            android:title="Log Out" />
-        <item
             android:id="@+id/version"
             android:title="Home Restaurant 1.0 version"
             />

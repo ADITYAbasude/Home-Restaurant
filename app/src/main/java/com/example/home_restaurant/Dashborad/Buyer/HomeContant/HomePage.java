@@ -97,14 +97,7 @@ public class HomePage extends Fragment {
         setHotels.setAdapter(nearestHotel);
         refreshLayout.setEnabled(false);
 
-        Thread thread = new Thread() {
-            @Override
-            public void run() {
-                super.run();
-                collectData(nearestHotel);
-            }
-        };
-        thread.start();
+        collectData(nearestHotel);
 
 
         scrolling.setOnScrollChangeListener((v, scrollX, scrollY, oldScrollX, oldScrollY) -> {

@@ -10,7 +10,7 @@
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Seller</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_slideshow">Order card</string>
     <string name="title_activity_verify_your_current_address">VerifyYourCurrentAddress</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

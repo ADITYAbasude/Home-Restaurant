@@ -86,20 +86,25 @@ public class showNearestHotel extends RecyclerView.Adapter<showNearestHotel.myVi
                 .child("Hotel Data").child("Hotel Rating").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                snapshot.getRef().child("rating").addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot2) {
-                        hotelRegistrationModel hotelRegistrationModel1 = snapshot2.getValue(hotelRegistrationModel.class);
-                        int totalUser = (int) snapshot.getChildrenCount() - 1;
-                        float totalRating = Float.parseFloat(hotelRegistrationModel1.rating);
-                        float calculateRating = totalRating / totalUser;
-                        holder.ratingOfHotel.setText(String.format("%.1f", calculateRating));
-                    }
+                if (snapshot.exists()) {
 
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-                    }
-                });
+                    snapshot.getRef().child("rating").addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot2) {
+                            if (snapshot2.exists()) {
+                                hotelRegistrationModel hotelRegistrationModel1 = snapshot2.getValue(hotelRegistrationModel.class);
+                                int totalUser = (int) snapshot.getChildrenCount() - 1;
+                                float totalRating = Float.parseFloat(hotelRegistrationModel1.rating);
+                                float calculateRating = totalRating / totalUser;
+                                holder.ratingOfHotel.setText(String.format("%.1f", calculateRating));
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+                        }
+                    });
+                }
             }
 
             @Override

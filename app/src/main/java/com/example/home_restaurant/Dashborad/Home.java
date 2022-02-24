@@ -1,10 +1,10 @@
 package com.example.home_restaurant.Dashborad;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +17,7 @@ import androidx.navigation.ui.NavigationUI;
 import com.example.home_restaurant.Models.UserAuthenticationModel;
 import com.example.home_restaurant.R;
 import com.example.home_restaurant.databinding.ActivityHomeBinding;
+import com.example.home_restaurant.loginSystem.user_verification;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.material.navigation.NavigationView;
@@ -28,14 +29,14 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
-public class Home extends AppCompatActivity {
-
+public class Home extends AppCompatActivity  {
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityHomeBinding binding;
     private ImageView setUserImage;
     private final DatabaseReference dataRef = FirebaseDatabase.getInstance().getReference("UserData")
             .child(FirebaseAuth.getInstance().getUid());
     private TextView setUserName;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +60,7 @@ public class Home extends AppCompatActivity {
         setUserImage = navigationView.getHeaderView(0).findViewById(R.id.setUserImage);
         setUserName = navigationView.getHeaderView(0).findViewById(R.id.setUserName);
 
+
         dataRef.child("userImage").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -74,20 +76,24 @@ public class Home extends AppCompatActivity {
                     }
                 }
             }
+
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {}
+            public void onCancelled(@NonNull DatabaseError error) {
+            }
         });
 
         dataRef.child("Info").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if (snapshot.exists()){
+                if (snapshot.exists()) {
                     UserAuthenticationModel storeUserName = snapshot.getValue(UserAuthenticationModel.class);
                     setUserName.setText(storeUserName.UserName);
                 }
             }
+
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {}
+            public void onCancelled(@NonNull DatabaseError error) {
+            }
         });
     }
 
@@ -97,11 +103,14 @@ public class Home extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.home, menu);
         menu.findItem(R.id.action_settings).setOnMenuItemClickListener(item -> {
-            Toast.makeText(Home.this, "clicked", Toast.LENGTH_SHORT).show();
+            FirebaseAuth.getInstance().signOut();
+            startActivity(new Intent(this , user_verification.class));
+            finish();
             return false;
         });
         return true;
     }
+
 
     @Override
     public boolean onSupportNavigateUp() {
@@ -109,4 +118,6 @@ public class Home extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
+
 }

@@ -136,9 +136,11 @@ public class SeparateHotelProducts_fragment extends Fragment {
                 .child("Hotel Data").child("Hotel Rating").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+
                 snapshot.getRef().child("rating").addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot2) {
+
                         hotelRegistrationModel hotelModel = snapshot2.getValue(hotelRegistrationModel.class);
                         float totalRating2 = Float.parseFloat(hotelModel.rating);
                         int totalUser2 = (int) snapshot.getChildrenCount() - 1;
@@ -147,6 +149,7 @@ public class SeparateHotelProducts_fragment extends Fragment {
                         setRating.setText(String.format("%.1f", calculateRating2));
 
                         if (!snapshot.hasChild(FirebaseAuth.getInstance().getUid())) {
+                            setRating.setText("0.0");
                             post.setOnClickListener(v -> {
                                 ratingLayout.setVisibility(View.VISIBLE);
                                 float ratingCount = ratingBar.getRating();
@@ -170,13 +173,19 @@ public class SeparateHotelProducts_fragment extends Fragment {
                             numberOfFeedback.setText(String.valueOf(totalUser));
                             setRating.setText(String.format("%.1f", calculateRating));
                         }
+
                     }
+
                     @Override
-                    public void onCancelled(@NonNull DatabaseError error) {}
+                    public void onCancelled(@NonNull DatabaseError error) {
+                    }
                 });
+
             }
+
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {}
+            public void onCancelled(@NonNull DatabaseError error) {
+            }
         });
     }
 }

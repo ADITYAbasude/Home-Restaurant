@@ -16,6 +16,11 @@ public class hotelRegistrationModel {
         this.lag = lag;
     }
 
+    public hotelRegistrationModel(String lat , String lag){
+        this.lat = lat;
+        this.lag = lag;
+    }
+
     public hotelRegistrationModel(String rating){
         this.rating = rating;
     }

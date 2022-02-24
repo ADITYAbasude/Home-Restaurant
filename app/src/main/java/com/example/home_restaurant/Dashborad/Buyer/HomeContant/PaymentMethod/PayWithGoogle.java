@@ -79,30 +79,35 @@ public class PayWithGoogle extends AppCompatActivity {
                         FirebaseDatabase.getInstance().getReference("UserData").child(FirebaseAuth.getInstance().getUid())
                                 .child("Info").addValueEventListener(new ValueEventListener() {
                             @Override
-                            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                UserAuthenticationModel authenticationModel = snapshot.getValue(UserAuthenticationModel.class);
-
+                            public void onDataChange(@NonNull DataSnapshot snapshot2) {
+                                UserAuthenticationModel authenticationModel = snapshot2.getValue(UserAuthenticationModel.class);
                                 String orderId = FirebaseDatabase.getInstance().getReference().push().getKey();
                                 AddDishModel addDishModel = snapshot.getValue(AddDishModel.class);
-                                AddDishModel addDishModel1 = new AddDishModel(addDishModel.HotelId
-                                        , addDishModel.DishTitle, addDishModel.DishDescription, addDishModel.DishPrice
-                                        , addDishModel.DishImage, orderId , authenticationModel.UserName);
-                                FirebaseDatabase.getInstance().getReference("UserData").child(FirebaseAuth.getInstance().getUid())
-                                        .child("Orders").child(orderId).setValue(addDishModel1);
-                                FirebaseDatabase.getInstance().getReference("Seller").child(getIntent().getStringExtra("hotelId"))
-                                        .child("Orders").child(orderId).setValue(addDishModel1);
-                            }
+                                snapshot2.getRef().child("LatLag").addValueEventListener(new ValueEventListener() {
+                                    @Override
+                                    public void onDataChange(@NonNull DataSnapshot snapshot3) {
+                                        UserAuthenticationModel authenticationModel2 = snapshot3.getValue(UserAuthenticationModel.class);
+                                        AddDishModel addDishModel1 = new AddDishModel(addDishModel.HotelId
+                                                , addDishModel.DishTitle, addDishModel.DishDescription, addDishModel.DishPrice
+                                                , addDishModel.DishImage, orderId, authenticationModel.UserName,
+                                                authenticationModel2.lat , authenticationModel2.lag);
+                                        FirebaseDatabase.getInstance().getReference("UserData").child(FirebaseAuth.getInstance().getUid())
+                                                .child("Orders").child(orderId).setValue(addDishModel1);
+                                        FirebaseDatabase.getInstance().getReference("Seller").child(getIntent().getStringExtra("hotelId"))
+                                                .child("Orders").child(orderId).setValue(addDishModel1);
+                                    }
 
+                                    @Override
+                                    public void onCancelled(@NonNull DatabaseError error) {
+                                    }
+                                });
+                            }
                             @Override
-                            public void onCancelled(@NonNull DatabaseError error) {
-
-                            }
+                            public void onCancelled(@NonNull DatabaseError error) {}
                         });
                     }
-
                     @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-                    }
+                    public void onCancelled(@NonNull DatabaseError error) {}
                 });
     }
 
